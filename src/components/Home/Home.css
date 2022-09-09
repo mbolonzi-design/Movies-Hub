@@ -3,12 +3,24 @@
     background-position: center
     ;
 } */
-.title{
-    font-size: 2.5rem;
+.title, h3{
+    font-size: 1.5rem;
     text-align: center;
-    /* background-color: #22254b;
-    color: #fff; */
+    margin-top: .75rem;
 }
-.collections{
+.collections-container{
     display: flex;
+    flex-direction: row;
+}
+.movieCard{
+    padding: .625rem;
+    margin: .3125rem;
+}
+.movieCard img{
+    width: 300px;
+    height: 280px;
+}
+.movieCard h5{
+    margin-bottom: 4px;
+    font-size: 1rem;
 }

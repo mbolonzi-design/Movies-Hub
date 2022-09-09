@@ -11,7 +11,7 @@ function NavBar(){
             <div>
                 <ul>
                     <NavLink to ="/"><li>Home</li></NavLink>
-                    <NavLink to ="/movies"><li>Movies</li></NavLink>
+                    <NavLink to ="/movielist"><li>Movie List</li></NavLink>
                     <NavLink to ="/reviews"><li>Reviews</li></NavLink>
                     <NavLink to ="/contacts"><li>Contacts</li></NavLink>
                 </ul>
