@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import NewReview from './NewReview';
 
 
 function Reviews() {
@@ -11,6 +12,20 @@ function Reviews() {
         .then(data => setReviews(data));
     }, []);
 
+    function handlePosting(newReview){
+        setReviews([...reviews, newReview]);
+    }
+
+    function handleDelete(id){
+        fetch(`http://localhost:9292/reviews/${id}`, {
+            method: 'DELETE'
+        })
+        .then(response => response.json())
+        .then(data => {
+            const updatedReviews = reviews.filter(review => review.id !== id);
+            setReviews(updatedReviews);
+        });
+    }
 
     return (
         <div>
@@ -21,9 +36,11 @@ function Reviews() {
                         {review.content}
                         {review.rating} <br />
                         {review.movie_id}
+                        <button onClick={() => handleDelete(review.id)}>Delete</button>
                     </div>
                 </div>
             ))}
+            <NewReview handlePosting={handlePosting} />
         </div>
     );
 }

@@ -37,7 +37,7 @@ function NewMovie({handlePosting}){
     });
   }
   return (
-    <div>
+    <div className="newCard">
       <h3>Add New Movie</h3>
       <form onSubmit={handleSubmit}>
         <label>Title</label>

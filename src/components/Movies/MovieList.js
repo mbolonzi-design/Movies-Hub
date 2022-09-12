@@ -31,14 +31,14 @@ function MovieList(){
     }
 
     return (
-        <div>
+        <div className="movieList">
             {movies.map(movie => (
                 <div key={movie.id} className="movieCard">
-                    <h1>{movie.title}</h1>
+                    <h1>Title: {movie.title}</h1>
                     <div>
-                        {movie.year} <br />
-                        {movie.plot} <br />
-                        {movie.rating} <br />
+                        Year: {movie.year} <br />
+                        Plot: {movie.plot} <br />
+                        Rating: {movie.rating} <br />
                         <button onClick={() => handleDelete(movie.id)}>Delete</button>
                     </div>
                 </div>
