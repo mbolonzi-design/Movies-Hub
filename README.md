@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Movie Hub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a full-stack project consisting of the React front-end part and a sinatra ActiveRecord backend with an API written in Ruby. Seed data is generated with Faker gems.
 
-## Available Scripts
+This project is part of the requirements to complete phase 3 of the moringa-flatiron shool curriculum (Ruby programming language)
 
-In the project directory, you can run:
+## backend github link: https://github.com/mbolonzi-design/movie-backend
 
-### `npm start`
+## Author
+This Project was developed by **Mbolonzi Peter**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Description
+Movie Hub is your one site stop for all kinds of movies, you can easily add, delete and update reviews on the movies of your choice.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Project Setup Instructions.
+In order to set up this project locally on your machine, 
+clone the repository in the folder of your choice locally.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After cloning, first change(cd) the directory to the front end folder and run a quick **npm install** on the command line. This will install all the necessary node modules required for the react front-end.
+Once the installation is complete, you can run **npm start** to go live and view the react project on your web- browser
 
-### `npm run build`
+With this 2 tasks complete, change directory to the backend folder and run a quick **bundle install** which will also install the necessary required gems for the backend application.
+After bundle install, you will need 2 more comands to set up your server and get it live.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+First, you have to run **bundle exec rake db:migrate** which will create your database and set up all your tables in the local environment. You can also run **bundle exec rake db:seed** to populate your tables with some starter data, though this is not entirely neccessary. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Last but not least, run **bundle exec rake server** to get your server running and host your database locally. After starting the server, you will however need to refresh your react frontend application in the browser, so that a connection can be established. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can now view all your interns, edit their details, add new interns and even delete them. Aditionally, you can also view the company's details according to departments or supervisors.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Copyright & License Information
+This is an Open Source Project with an MIT license. For more Information on the license terms and condition, see the attached [LICENSE](./LICENSE)
