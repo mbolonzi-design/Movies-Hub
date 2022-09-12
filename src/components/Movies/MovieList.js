@@ -33,17 +33,20 @@ function MovieList(){
     return (
         <div className="movieList">
             <NewMovie handlePosting={handlePosting} />
-            {movies.map(movie => (
-                <div key={movie.id} className="movieCard">
-                    <h1>Title: {movie.title}</h1>
-                    <div>
-                        Year: {movie.year} <br />
-                        Plot: {movie.plot} <br />
-                        Rating: {movie.rating} <br />
-                        <button onClick={() => handleDelete(movie.id)}>Delete</button>
+            <h3>Our Collection</h3>
+            <div className="moviesList">
+                {movies.map(movie => (
+                    <div key={movie.id} className="movieCard">
+                        <h1>Title: {movie.title}</h1>
+                        <div>
+                            Year: {movie.year} <br />
+                            Plot: {movie.plot} <br />
+                            Rating: {movie.rating} <br />
+                            <button onClick={() => handleDelete(movie.id)}>Delete</button>
+                        </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
            
         </div>
     )

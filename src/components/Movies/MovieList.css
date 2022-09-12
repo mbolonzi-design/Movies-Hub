@@ -1,4 +1,11 @@
-
+.moviesList{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 150px;
+    margin-right: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
 .movieCard{
     display: flex;
     flex-direction: column;
@@ -33,10 +40,8 @@
 }
 
 .movieList{
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-around; */
-    margin: 0 auto;
+    margin-left: 50px;
+    margin-right: 50px;
     width: 100%;
     max-width: 1200px;
 }
