@@ -1,7 +1,7 @@
 .moviesList{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 150px;
+    margin-left: 50px;
     margin-right: 50px;
     width: 100%;
     max-width: 1200px;
@@ -11,10 +11,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
+    width: 350px;
     height: 280px;
     margin: 10px;
-    border: 1px solid rgb(228, 222, 222);
+    border: 1px solid rgb(247,244,244);
+    box-shadow: inset;
     border-radius: 5px;
     background-color: whitesmoke;
 }
