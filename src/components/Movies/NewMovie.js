@@ -1,4 +1,8 @@
 import React, {useState} from 'react';
+import './NewMovie.css';
+
+
+
 
 function NewMovie({handlePosting}){
 
@@ -37,16 +41,16 @@ function NewMovie({handlePosting}){
     });
   }
   return (
-    <div className="newCard">
+    <div className="newMovie">
       <h3>Add New Movie</h3>
       <form onSubmit={handleSubmit}>
-        <label>Title</label>
+        <label>Title:</label>
         <input type="text" name="title" value={movieData.title} onChange={handleChange} />
-        <label>Year</label>
+        <label>Year:</label>
         <input type="text" name="year" value={movieData.year} onChange={handleChange} />
-        <label>Plot</label>
+        <label>Plot:</label>
         <input type="text" name="plot" value={movieData.plot} onChange={handleChange} />
-        <label>Rating</label>
+        <label>Rating:</label>
         <input type="text" name="rating" value={movieData.rating} onChange={handleChange} />
         <button onClick={handleSubmit}>Add Movie</button>
       </form>

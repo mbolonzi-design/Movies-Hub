@@ -15,11 +15,34 @@ nav{
     border-bottom: .125rem solid #ccc;
 }
 
-
 ul{
     display: flex;
     list-style: none;
 }
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 100%;
+    /* background-color: #ccc; */
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: #aaa;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
 li, a{
     font-size: 1.25rem;
     color: #fff;

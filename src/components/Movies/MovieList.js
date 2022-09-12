@@ -32,6 +32,7 @@ function MovieList(){
 
     return (
         <div className="movieList">
+            <NewMovie handlePosting={handlePosting} />
             {movies.map(movie => (
                 <div key={movie.id} className="movieCard">
                     <h1>Title: {movie.title}</h1>
@@ -43,7 +44,7 @@ function MovieList(){
                     </div>
                 </div>
             ))}
-            <NewMovie handlePosting={handlePosting} />
+           
         </div>
     )
 
