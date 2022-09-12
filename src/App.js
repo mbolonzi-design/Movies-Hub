@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import MovieList from './components/Movies/MovieList';
 import Reviews from './components/Reviews/Reviews';
 import RentMovie from './components/Rent/RentMovie';
+import Contacts from './components/Contacts/Contacts';
 import './App.css';
 
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" exact element ={<Home />} />
           <Route path="/movielist" element = {<MovieList />} />
           <Route path="/reviews" element = {<Reviews />} />
+          <Route path="/contacts" element = {<Contacts />} />
           <Route path="/rentmovie" element = {<RentMovie />} />
         </Routes>
       </Router>
