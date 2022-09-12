@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import NewReview from './NewReview';
+import './Reviews.css';
 
 
 function Reviews() {
@@ -28,19 +29,20 @@ function Reviews() {
     }
 
     return (
-        <div>
+        <div className="review-container">
+            <NewReview handlePosting={handlePosting} />
+            <h2>Reviews</h2>
             {reviews.map(review => (
-                <div key={review.id} className="review-container">
-                    <h1>{review.title}</h1>
-                    <div>
-                        {review.content}
-                        {review.rating} <br />
-                        {review.movie_id}
+                <div key={review.id} className="review-card">
+                    <h4>Title: {review.title}</h4>
+                    <div className="review">
+                        Comment: {review.content} <br />
+                        Rating: {review.rating} <br />
+                        Movie_Id: {review.movie_id} <br />
                         <button onClick={() => handleDelete(review.id)}>Delete</button>
                     </div>
                 </div>
             ))}
-            <NewReview handlePosting={handlePosting} />
         </div>
     );
 }

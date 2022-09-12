@@ -1,0 +1,25 @@
+.review-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.review-card button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 30px;
+}
+
+.review-card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(247, 244, 244);
+    box-shadow: inset;
+    border-radius: 5px;
+    padding: 10px;
+}

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './NewReview.css';
 
 function NewReview({handlePosting}){
 
@@ -41,13 +42,13 @@ function NewReview({handlePosting}){
     <div>
       <h3>Add Review</h3>
       <form onSubmit={handleSubmit}>
-        <label>Title</label>
+        <label>Title:</label>
         <input type="text" name="title" value={reviewData.title} onChange={handleChange} />
-        <label>Content</label>
+        <label>Content:</label>
         <input type="text" name="content" value={reviewData.content} onChange={handleChange} />
-        <label>Rating</label>
+        <label>Rating:</label>
         <input type="text" name="rating" value={reviewData.rating} onChange={handleChange} />
-        <label>Movie ID</label>
+        <label>Movie ID:</label>
         <input type="text" name="movie_id" value={reviewData.movie_id} onChange={handleChange} />
         <button onClick={handleSubmit}>Add Review</button>
       </form>
