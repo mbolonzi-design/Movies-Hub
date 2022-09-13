@@ -25,9 +25,17 @@ h2{
 }
 
 .review-card button{
-    margin-top: 10px;
+    width: 76px;
+    margin-top: 30px;
     margin-bottom: 10px;
     padding: 5px;
+    font-weight: 700;
+    background-color: rgb(195, 201, 207);
+    border-radius: 4px;
+}
+
+.review-card button:hover{
+    background-color: #e0e0e0;
 }
 
 .edit-btn{
