@@ -42,8 +42,8 @@ function MovieList(){
                             Year: {movie.year} <br />
                             Plot: {movie.plot} <br />
                             Rating: {movie.rating} <br />
-                            <button onClick={() => handleDelete(movie.id)}>Delete</button>
                         </div>
+                        <button onClick={() => handleDelete(movie.id)}>Delete</button>
                     </div>
                 ))}
             </div>
