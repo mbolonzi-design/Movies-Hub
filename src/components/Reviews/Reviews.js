@@ -61,7 +61,7 @@ function Reviews(onUpdateReview) {
                         Rating: {review.rating} <br />
                         Movie_Id: {review.movie_id} <br />
                         <button onClick={() => handleDelete(review.id)}>Delete</button>
-                        <button onClick={() => onUpdateReview(review.id, review)}>Edit</button>
+                        <button className='edit-btn' onClick={() => onUpdateReview(review.id, review)}>Edit</button>
                     </div>
                 </div>
             ))}

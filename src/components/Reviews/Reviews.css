@@ -23,3 +23,13 @@ h2{
     border-radius: 5px;
     padding: 10px;
 }
+
+.review-card button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.edit-btn{
+    margin-left: 25px;
+}
