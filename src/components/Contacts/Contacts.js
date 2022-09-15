@@ -2,7 +2,7 @@ import React from 'react';
 
 function Contacts() {
     return (
-        <div>
+        <div className="contacts">
             <h2>Get in touch</h2>
             <p>Phone: +254 700337642</p> <br />
             <p>Email:moviehubke@gmail.com</p>

@@ -12,7 +12,7 @@ nav{
     top: 0;
     left: 0;
     z-index: 50;
-    border-bottom: .125rem solid #ccc;
+    border-bottom: .125rem solid rgb(95, 92, 92);
 }
 
 ul{
@@ -26,13 +26,12 @@ li{
     justify-content: center;
     width: 10rem;
     height: 100%;
-    /* background-color: #ccc; */
     border-radius: .5rem;
     cursor: pointer;
 }
 
 li:hover{
-    background-color: lightgray;
+    color: lightseagreen;
 }
 
 a{
@@ -51,7 +50,6 @@ li, a{
     text-decoration: none;
 }
 li:hover, a:hover{
-    background-color: #ccc;
     color: #000;
     border-radius: .25rem;
 }

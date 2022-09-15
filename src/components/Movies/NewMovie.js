@@ -43,7 +43,7 @@ function NewMovie({handlePosting}){
   return (
     <div className="newMovie">
       <h3>Add New Movie</h3>
-      <form onSubmit={handleSubmit}>
+      <form className='form' onSubmit={handleSubmit}>
         <label>Title:</label>
         <input type="text" name="title" value={movieData.title} onChange={handleChange} />
         <label>Year:</label>

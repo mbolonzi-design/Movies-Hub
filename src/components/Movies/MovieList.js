@@ -33,6 +33,7 @@ function MovieList(){
     return (
         <div className="movieList">
             <NewMovie handlePosting={handlePosting} />
+            <hr />
             <h3>Our Collection</h3>
             <div className="moviesList">
                 {movies.map(movie => (

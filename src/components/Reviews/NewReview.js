@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+
 import './NewReview.css';
 
 function NewReview({handlePosting}){
@@ -41,7 +42,7 @@ function NewReview({handlePosting}){
   return (
     <div>
       <h3>Add Review</h3>
-      <form onSubmit={handleSubmit}>
+      <form className='form' onSubmit={handleSubmit}>
         <label>Title:</label>
         <input type="text" name="title" value={reviewData.title} onChange={handleChange} />
         <label>Content:</label>

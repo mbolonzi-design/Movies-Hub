@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import NewReview from './NewReview';
+import EditReview from '../EditReview/EditReview';
 import './Reviews.css';
 
 
-function Reviews(onUpdateReview) {
+function Reviews({review, updateReview}) {
 
     const [reviews, setReviews] = useState([]);
 
@@ -28,30 +29,21 @@ function Reviews(onUpdateReview) {
         });
     }
 
-    // function handleEdit(id, edit){
-    //     fetch(`http://localhost:9292/reviews/${id}`, {
-    //         method: 'PATCH',
-    //         headers: {
-    //             'Content-Type': 'application/json'
-    //         },
-    //         body: JSON.stringify(edit)
-    //     })
-    //     .then(response => response.json())
-    //     .then(data => {
-    //         const updatedReviews = reviews.map(review => {
-    //             if (review.id === id){
-    //                 return data;
-    //             } else {
-    //                 return review;
-    //             }
-    //         });
-    //         setReviews(updatedReviews);
-    //     });
-    // }
+    function handleEditReview(updatedReview){
+        const updatedReviews = reviews.map(review => {
+            if(review.id === updatedReview.id){
+                return updatedReview;
+            } else {
+                return review;
+            }
+        });
+        setReviews(updatedReviews);
+    }
 
     return (
         <div className="review-container">
             <NewReview handlePosting={handlePosting} />
+            <hr />
             <h2>Reviews</h2>
             {reviews.map(review => (
                 <div key={review.id} className="review-card">
@@ -61,7 +53,6 @@ function Reviews(onUpdateReview) {
                         Rating: {review.rating} <br />
                         Movie_Id: {review.movie_id} <br />
                         <button onClick={() => handleDelete(review.id)}>Delete</button>
-                        <button className='edit-btn' onClick={() => onUpdateReview(review.id, review)}>Edit</button>
                     </div>
                 </div>
             ))}
