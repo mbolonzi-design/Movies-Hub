@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import './NewReview.css';
+
 
 function NewReview({handlePosting}){
 

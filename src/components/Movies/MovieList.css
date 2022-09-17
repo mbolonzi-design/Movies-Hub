@@ -6,39 +6,39 @@
     width: 100%;
     max-width: 1200px;
 }
+
+.movieCard h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
 .movieCard{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     width: 350px;
-    height: 280px;
+    height: 220px;
     margin: 10px;
     border: 1px solid rgb(247,244,244);
     box-shadow: inset;
     border-radius: 5px;
     background-color: whitesmoke;
 }
-.movieCard:hover{
-    background-color: #cac7c7;
-}
+
 
 .movieCard button{
     width: 80px;
     height: 30px;
     border: none;
-    margin-top: 5px;
-    border-radius: 5px;
+    margin-top: 60px;
+    border-radius: 2px;
     background-color: lightslategray;
     color: #000;
     font-size: 1.2rem;
-    font-weight: bold;
     cursor: pointer;
 }
 
-.movieCard button:hover{
-    background-color: #e0e0e0;
-}
 
 .movieList{
     margin-left: 50px;

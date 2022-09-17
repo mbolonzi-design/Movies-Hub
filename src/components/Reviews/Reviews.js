@@ -4,7 +4,7 @@ import EditReview from '../EditReview/EditReview';
 import './Reviews.css';
 
 
-function Reviews({review, updateReview}) {
+function Reviews({onUpdateReview}) {
 
     const [reviews, setReviews] = useState([]);
 
@@ -29,16 +29,20 @@ function Reviews({review, updateReview}) {
         });
     }
 
-    function handleEditReview(updatedReview){
-        const updatedReviews = reviews.map(review => {
-            if(review.id === updatedReview.id){
-                return updatedReview;
-            } else {
-                return review;
-            }
-        });
-        setReviews(updatedReviews);
+    // function handleEdit(id, review){
+    //     fetch(`http://localhost:9292/reviews/${id}`, {
+    //         method: 'PATCH',
+    //         headers: {
+    //             'Content-Type': 'application/json'
+    //         },
+    //         body: JSON.stringify(review)
+    //     });
+    // }
+
+    function updateReview(editedReview){
+        setReviews([...reviews, editedReview]);
     }
+
 
     return (
         <div className="review-container">
@@ -53,6 +57,9 @@ function Reviews({review, updateReview}) {
                         Rating: {review.rating} <br />
                         Movie_Id: {review.movie_id} <br />
                         <button onClick={() => handleDelete(review.id)}>Delete</button>
+                        {/* <button onClick = {updateReview}>
+                            Edit
+                        </button> */}
                     </div>
                 </div>
             ))}
