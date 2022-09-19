@@ -1,0 +1,13 @@
+.like-btn{
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #030720;
+    border: 1px solid #ccc;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}

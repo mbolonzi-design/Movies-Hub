@@ -7,20 +7,20 @@
     max-width: 1200px;
 }
 
-.movieCard h1{
-    font-size: 1.5rem;
+.movieCard h3{
+    font-size: 20px;
     font-weight: 600;
-    margin: 0;
     margin-bottom: 10px;
 }
 
 .movieCard{
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 350px;
-    height: 220px;
-    margin: 10px;
+    height: 240px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
     border: 1px solid #000;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(73, 72, 72);
@@ -30,15 +30,28 @@
 
 
 .movieCard button{
-    width: 80px;
+    display: inline-block;
+    width: 70px;
     height: 30px;
-    border: none;
-    margin-top: 60px;
-    border-radius: 2px;
-    background-color: #3f51b5;
-    color: #000;
-    font-size: 1.2rem;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #030720;
+    border: 1px solid #ccc;
+    color: #fff;
+    font-size: 1.1rem;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btn{
+    margin-top: 60px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 30px;
+}
+.movieCard button:hover{
+    background-color: rgb(66, 63, 63);
+    color: #fff;
 }
 
 

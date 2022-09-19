@@ -41,7 +41,7 @@ function NewReview({handlePosting}){
   }
   return (
     <div>
-      <h3>Add Review</h3>
+      <div className='neew'><h3>Add Review</h3></div>
       <form className='form' onSubmit={handleSubmit}>
         <label>Title:</label>
         <input type="text" name="title" value={reviewData.title} onChange={handleChange} />

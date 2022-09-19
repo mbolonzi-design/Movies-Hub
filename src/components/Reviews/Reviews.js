@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import NewReview from './NewReview';
-import EditReview from '../EditReview/EditReview';
+import LikeButton from '../LikeButton';
 import './Reviews.css';
 
 
@@ -39,9 +39,9 @@ function Reviews({onUpdateReview}) {
     //     });
     // }
 
-    function updateReview(editedReview){
-        setReviews([...reviews, editedReview]);
-    }
+    // function updateReview(editedReview){
+    //     setReviews([...reviews, editedReview]);
+    // }
 
 
     return (
@@ -51,15 +51,15 @@ function Reviews({onUpdateReview}) {
             <h2>Reviews</h2>
             {reviews.map(review => (
                 <div key={review.id} className="review-card">
-                    <h4>Title: {review.title}</h4>
+                    <h3>Title: {review.title}</h3>
                     <div className="review">
-                        Comment: {review.content} <br />
-                        Rating: {review.rating} <br />
-                        Movie_Id: {review.movie_id} <br />
+                        <strong>Comment:</strong> {review.content} <br />
+                        <strong>Rating:</strong> {review.rating} <br />
+                        <strong>Movie_Id:</strong> {review.movie_id} <br />
+                    </div>
+                    <div className='btn'>
+                        <LikeButton />
                         <button onClick={() => handleDelete(review.id)}>Delete</button>
-                        {/* <button onClick = {updateReview}>
-                            Edit
-                        </button> */}
                     </div>
                 </div>
             ))}

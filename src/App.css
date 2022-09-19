@@ -5,11 +5,15 @@
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
-/* body{
-  background-color:grey;
-  background-image: url(./images/1.jpg);
-} */
-/* h5{
-  font-size: 3.125rem;
-} */
 
+.btn{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 25px;
+}
+
+body{
+  background-color: #edeef1;
+  margin: autoprefixer;
+}

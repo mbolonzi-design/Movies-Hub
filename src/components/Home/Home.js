@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import LikeButton from '../LikeButton';
 
 import './Home.css';
 
@@ -12,6 +13,7 @@ const Home = () => {
         .then(response => response.json())
         .then(data => setTvShows(data));
     }, []);
+
 
 
     return(
@@ -29,6 +31,7 @@ const Home = () => {
                             <strong>Rating:</strong> {tvShow.rating} <br />
                             <strong>Review:</strong> {tvShow.review} <br />
                         </div>
+                        <div id='likes'><LikeButton /></div>
                     </div>
                 ))}
             </div>

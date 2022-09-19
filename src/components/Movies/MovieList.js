@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import NewMovie from './NewMovie';
+import LikeButton from '../LikeButton';
 import './MovieList.css';
 import {useNavigate} from 'react-router-dom';
 
@@ -38,17 +39,19 @@ function MovieList(){
             <div className="moviesList">
                 {movies.map(movie => (
                     <div key={movie.id} className="movieCard">
-                        <h1>Title: {movie.title}</h1>
+                        <h3>Title: {movie.title}</h3>
                         <div>
                             Year: {movie.year} <br />
                             Plot: {movie.plot} <br />
                             Rating: {movie.rating} <br />
                         </div>
-                        <button onClick={() => handleDelete(movie.id)}>Delete</button>
+                        <div className='btn' id='btn'>
+                            <LikeButton />
+                            <button onClick={() => handleDelete(movie.id)}>Delete</button>
+                        </div>
                     </div>
                 ))}
             </div>
-           
         </div>
     )
 

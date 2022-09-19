@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import MovieList from './components/Movies/MovieList';
 import Reviews from './components/Reviews/Reviews';
 import Contacts from './components/Contacts/Contacts';
+import Footer from './components/Footer/Footer';
 import './App.css';
 
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/reviews" element = {<Reviews />} />
           <Route path="/contacts" element = {<Contacts />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
