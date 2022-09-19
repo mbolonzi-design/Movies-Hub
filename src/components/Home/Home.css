@@ -1,28 +1,17 @@
-.hero{
+#intro{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #000;
     text-align: center;
-    margin-top: 20px;
-    padding:5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
-
-.hero h2{
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #000;
-    margin-bottom: 10px;
-}
-
-.hero p{
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #000;
-    margin-bottom: 10px;
-}
-
-#shows_item{
+#show_item{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 100px;
-    margin-right: 50px;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     max-width: 1200px;
 }
@@ -31,12 +20,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 350px;
-    height: 220px;
+    width: 380px;
+    height: 300px;
     margin: 10px;
     border: 1px solid #000;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(73, 72, 72);
     border-radius: 5px;
     padding: 20px;
+}
+
+.shows h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.shows strong{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }

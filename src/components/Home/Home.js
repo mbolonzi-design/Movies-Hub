@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 
+import './Home.css';
+
 
 const Home = () => {
 
@@ -14,16 +16,18 @@ const Home = () => {
 
     return(
         <div>
-            <h1>TV Shows</h1>
-            <div>
+            <div id='intro'>
+                <h3>Welcome to the Movie Database</h3>
+            </div>
+            <div id='show_item'>
                 {tvShows.map(tvShow => (
-                    <div key={tvShow.id}>
-                        <h1>{tvShow.title}</h1>
+                    <div className='shows' key={tvShow.id}>
+                        <h3>{tvShow.title}</h3>
                         <div>
-                            Year: {tvShow.year} <br />
-                            Plot: {tvShow.plot} <br />
-                            Rating: {tvShow.rating} <br />
-                            Review: {tvShow.review} <br />
+                            <strong>Year:</strong> {tvShow.year} <br />
+                            <strong>Plot:</strong> {tvShow.plot} <br />
+                            <strong>Rating:</strong> {tvShow.rating} <br />
+                            <strong>Review:</strong> {tvShow.review} <br />
                         </div>
                     </div>
                 ))}
