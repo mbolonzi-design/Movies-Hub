@@ -4,7 +4,7 @@ import './NavBar.css'
 
 function NavBar(){
     return(
-        <nav>
+        <nav className='navbar'>
             <div>
                 <h3>Movie Hub Inc</h3>
             </div>
